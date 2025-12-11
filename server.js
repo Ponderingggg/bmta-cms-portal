@@ -5,7 +5,7 @@ const next = require("next");
 const dev = true;
 const app = next({ dev });
 const handle = app.getRequestHandler();
-// dasas
+
 app.prepare().then(() => {
   const httpsOptions = {
     key: readFileSync("./localhost-key.pem"),
